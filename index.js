@@ -5,20 +5,26 @@ let N = new neuron({
     dimmension: 3
 })
 
-let flat = [0.1, 0.2, 0.3]
+let flit = [0.1, 0.2, 0.3]
+let flot = [0.2, 0.3, 0.4]
+
 
 console.clear()
 
-N.output(flat)
+N.output(flit)
 
 N.prettyPrint()
 
-N.train(flat)
-N.train(flat)
-N.train(flat)
-N.train(flat)
-N.train(flat)
-
+N.train(flot)
+N.prettyPrint()
+N.train(flot)
+N.prettyPrint()
+N.train(flot)
+N.prettyPrint()
+N.train(flot)
+N.prettyPrint()
+N.train(flot)
 N.prettyPrint()
 
-N.output(flat)
+
+console.log(N)
